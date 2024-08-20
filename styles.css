@@ -46,6 +46,10 @@ a {
   font-weight: 600;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .logo {
   width: 40px;
   margin-right: 15px;
@@ -955,10 +959,6 @@ FOOTER
   .header__container {
     flex-direction: column;
   }
-
-  .nav__row {
-  }
-
 
   .features__container {
     flex-direction: column;
