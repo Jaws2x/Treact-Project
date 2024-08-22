@@ -1215,5 +1215,13 @@ FOOTER
     line-height: 60px;
   }
 
+  .user__container {
+    flex-direction: column;
+  }
+
+  .button--wrapper {
+    padding-top: 20px;
+  }
+
 }
 
