@@ -1095,6 +1095,12 @@ FOOTER
   }
 }
 
+@media (max-width: 1260px) {
+  .final__container {
+    padding: 75px 40px 120px 40px;
+  }
+}
+
 @media (max-width: 1120px) {
   .row,
   .img__row {
@@ -1143,6 +1149,12 @@ FOOTER
     padding-bottom: 60px;
   }
 
+}
+
+@media (max-width: 1040px) {
+  .values__container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1125px) {
@@ -1205,8 +1217,3 @@ FOOTER
 
 }
 
-@media (max-width: 1260px) {
-  .final__container {
-    padding: 75px 40px 120px 40px;
-  }
-}
