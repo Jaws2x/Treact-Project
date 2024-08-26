@@ -1385,6 +1385,27 @@ FOOTER
 
   .values__offer__para {
     width: 100%;
+    text-align: center;
+  }
+
+  .values__offer {
+    padding-right: 0;
+  }
+
+  .values__button {
+    text-align: center;
+  }
+
+  .values__container {
+    text-align: center;
+  }
+
+  .affordable {
+    justify-content: center;
+  }
+
+  .professionalism {
+    justify-content: center;
   }
 
   .values__para {
