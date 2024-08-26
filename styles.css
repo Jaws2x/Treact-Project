@@ -119,6 +119,7 @@ Nav
 .header__container {
   margin: 0px 70px 150px 70px;
   display: flex;
+  align-items: center;
 }
 
 .header {
@@ -132,7 +133,7 @@ Nav
   flex-direction: column;
   max-width: 1200px;
   width: 80%;
-  margin: 0px 50px 50px 50px;
+  margin: 20px 0px 50px 50px;
 }
 
 .subheader {
@@ -157,7 +158,7 @@ h2 {
   color: #243e63;
   margin-bottom: 25px;
   line-height: 33px;
-  width: 110%;
+  width: 100%;
   font-size: 48px;
   font-weight: 900;
 }
@@ -180,6 +181,18 @@ h5 {
 .row {
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.header__img__row {
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header__row {
+  max-width: 1200px;
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -236,6 +249,7 @@ button:hover {
 
 .trusted__container {
   margin: 75px 50px 50px 50px;
+  text-align: center;
 }
 
 p {
@@ -365,6 +379,7 @@ HEADER
 .features__bigbox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .img__name {
@@ -378,7 +393,7 @@ HEADER
   line-height: 30px;
   font-weight: 400;
   color: #7c8ba1;
-  width: 75%;
+  width: 70%;
 }
 
 /* 
@@ -388,15 +403,16 @@ QUALITY
 */
 
 .quality__container {
-  padding: 150px 150px 150px 125px;
+  padding: 150px 150px 0px 125px;
   display: flex;
 }
 
 .quality__header {
   font-size: 48px;
   font-weight: 900;
-  line-height: 70px;
+  line-height: 60px;
   margin: 0;
+  width: 90%;
 }
 
 .quality__title {
@@ -405,13 +421,13 @@ QUALITY
 
 .quality__para {
   font-size: 18px;
-  width: 115%;
+  width: 90%;
   color: #7c8ba1;
   font-weight: 500;
 }
 
 .quality__description {
-  width: 80%;
+  width: 100%;
   line-height: 1.625;
 }
 
@@ -426,6 +442,7 @@ QUALITY
   width: 100%;
   height: 90%;
 }
+
 
 .quality__button {
   border-radius: 9999px;
@@ -449,7 +466,7 @@ STEPS
 .steps__container {
   display: flex;
   align-items: center;
-  padding: 160px 80px;
+  padding: 160px 80px 40px 80px;
   width: 100%;
 }
 
@@ -488,6 +505,7 @@ STEPS
 .steps__subheader {
   font-size: 48px;
   font-weight: 900;
+  width: 100%;
 }
 
 .steps__list--wrapper {
@@ -537,7 +555,6 @@ VALUES
 
 .values__para {
   font-size: 18px;
-  width: 100%;
   color: #7c8ba1;
   font-weight: 500;
   line-height: 26px;
@@ -585,7 +602,7 @@ PRICING
 */
 
 .pricing__container {
-  padding: 150px 0px 150px;
+  padding: 150px 0px 40px;
   width: 100%;
 }
 
@@ -615,43 +632,57 @@ PRICING
 
 .pricing__plans--wrapper {
   display: flex;
-  width: 100%;
 }
 
 .plans {
   position: relative;
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: center;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
-    0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  border-radius: 8px;
-  margin-right: 2rem;
   margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(26 32 44 / var(--tw-text-opacity));
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .plans__2 {
   position: relative;
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: center;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
-    0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  background-image: linear-gradient(
-    135deg,
-    rgb(76, 81, 191) 0%,
-    rgb(102, 126, 234) 100%
-  );
-  border-radius: 8px;
-  margin-right: 2rem;
-  margin-top: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(247 250 252 / var(--tw-t))
 }
+
 
 .plans__style {
   position: absolute;
@@ -720,17 +751,16 @@ PRICING
 
 .plans__for--wrapper {
   border-style: solid;
+  border-width: 0px;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  border-left-width: 0px;
-  border-right-width: 0px;
   border-color: rgba(226, 232, 240, 0.441);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  margin-left: -1.75rem;
-  margin-right: -1.75rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .plans__main__feature {
@@ -766,14 +796,27 @@ PRICING
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
-  padding: 16px 60px;
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .second__button {
   background-color: white;
   color: #6415ff;
-  padding: 16px 60px;
-}
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;}
 
 .second__button:hover {
   background-color: white;
@@ -785,7 +828,14 @@ PRICING
     rgb(245, 101, 101) 0%,
     rgb(254, 178, 178) 100%
   );
-  padding: 16px 60px;
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .button__wrapper {
@@ -1087,6 +1137,10 @@ FOOTER
       padding-bottom: 1.25rem;
       padding-right: 12rem;
   }
+
+  .plans__2, .plans {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1117,7 +1171,7 @@ FOOTER
   }
 
   .quality__container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .pricing__plans--wrapper {
@@ -1149,6 +1203,64 @@ FOOTER
     padding-bottom: 60px;
   }
 
+  .quality__container {
+    text-align: center;
+  }
+
+  .quality__header {
+    font-size: 36px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .quality__para {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .quality__description {
+    padding-top: 50px;
+  }
+
+  .values__para {
+    width: 100%;
+  }
+
+  .img__description {
+    width: 100%;
+  }
+
+  .header__button {
+    position: inherit;
+  }
+
+  .values__offer {
+    padding-right: 40px;
+  }
+
+  .nav__link {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
+  .steps__description--wrapper {
+    padding-top: 50px;
+  }
+
+  .steps__description--wrapper {
+    text-align: center;
+  }
+
+  .steps__list--wrapper {
+    align-items: center;
+  }
+
+  .steps__description--wrapper {
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -1157,28 +1269,74 @@ FOOTER
   }
 }
 
-@media (max-width: 1125px) {
-  .nav__link {
-    display: none;
-  }
-  .btn__menu {
-    display: block;
-  }
-}
-
-@media (max-width: 1120px) {
-  .header__button {
-    position: inherit;
-  }
-
-  .values__offer {
-    padding-right: 40px;
-  }
-}
-
 @media (max-width: 1000px) {
   .img__container {
     width: 50%;
+  }
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__row {
+    width: 100%;
+  }
+
+  .header__img__row {
+    width: 80%;
+  }
+  .features__subheading {
+    width: 100%;
+}
+
+  .header {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .subheader {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .header__description {
+    align-items: center;
+  }
+
+  .features__subheading {
+    font-size: 16px;
+  }
+
+  .values__title {
+    text-align: center;
+  }
+
+  .values__subheader {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .values__para {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .values__offer--wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .values__offer__para {
+    width: 60%;
+  }
+
+  .pricing__subheader {
+    text-align: center;
+  }
+
+  .pricing__para {
+    font-size: 16px;
   }
 }
  
@@ -1193,9 +1351,7 @@ FOOTER
 
   .features__bigbox {
     flex-direction: column;
-    width: 150%;
     align-items: center;
-    padding-right: 200px;
   }
 
   .steps__subheader {
@@ -1223,5 +1379,82 @@ FOOTER
     padding-top: 20px;
   }
 
+  .quality__header {
+    font-size: 30px;
+  }
+
+  .values__offer__para {
+    width: 100%;
+  }
+
+  .values__para {
+    width: 100%;
+  }
+
+  .footer__description {
+    padding-left: 30px;
+    padding-right: 0px;
 }
 
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__para {
+    padding: 30px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .values__subheader {
+    font-size: 30px;
+  }
+
+  .values__container {
+    padding: 80px
+  }
+
+  .header__container {
+    padding: 0px;
+  }
+
+  .features__container {
+    padding: 50px;
+  }
+
+  .quality__container {
+    padding: 50px;
+  }
+
+  .img__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .steps__container {
+    padding: 50px;
+  }
+
+  .testimonials__container {
+    padding: 50px;
+  }
+
+  .final__button--wrapper {
+    text-align: center;
+  }
+
+  .footer__description {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__bottom {
+    padding: 50px;
+  }
+
+  .services {
+    margin: 0px;
+  }
+}
